@@ -1,4 +1,11 @@
 auto lo
-
 iface lo inet loopback
-iface eth0 inet dhcp
+
+allow-hotplug usb0
+iface usb0 inet dhcp
+iface usb0 inet6 static
+	address fd31:4159:2653:5898::1
+	netmask 64
+	autoconf 0
+	dad-attempts 0
+	accept_ra 0
