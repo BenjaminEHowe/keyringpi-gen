@@ -2,7 +2,6 @@ auto lo
 iface lo inet loopback
 
 allow-hotplug usb0
-iface usb0 inet dhcp
 iface usb0 inet6 static
 	address fd31:4159:2653:5898::1
 	netmask 64
