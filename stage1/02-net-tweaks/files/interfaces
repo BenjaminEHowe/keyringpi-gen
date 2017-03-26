@@ -8,3 +8,7 @@ iface usb0 inet6 static
 	autoconf 0
 	dad-attempts 0
 	accept_ra 0
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+	wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
